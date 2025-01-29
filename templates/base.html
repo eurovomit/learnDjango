@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Default {% endblock title %}</title>
+</head>
+<body>
+    <div><a href="/about">О нас</a> </div>
+    <h1>{% block header %}{% endblock header %}</h1>
+    <div>{% block content %}{% endblock content %}</div>
+    {% include "learnDjango/banner.html" with tutorial='learn Django' only%}
+    <div>MyCorp. 2025</div>
+</body>
+</html>
